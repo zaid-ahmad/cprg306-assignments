@@ -7,20 +7,6 @@ const NewItem = () => {
     const [quantity, setQuantity] = useState(1);
     const [category, setCategory] = useState("produce");
 
-    const categories = [
-        "Produce",
-        "Dairy",
-        "Bakery",
-        "Meat",
-        "Frozen Foods",
-        "Canned Goods",
-        "Dry Goods",
-        "Beverages",
-        "Snacks",
-        "Household",
-        "Other",
-    ];
-
     const increment = (e) => {
         e.preventDefault();
         if (quantity < 20) {
@@ -109,15 +95,83 @@ const NewItem = () => {
                         className='w-96 h-12 text-lg p-3 border border-gray-300 rounded text-black'
                         required
                     >
-                        {categories.map((cat) => (
-                            <option
-                                key={cat.toLowerCase()}
-                                value={cat.toLowerCase()}
-                                className='text-black'
-                            >
-                                {cat}
-                            </option>
-                        ))}
+                        <option
+                            key={"produce"}
+                            value={"produce"}
+                            className='text-black'
+                        >
+                            Produce
+                        </option>
+                        <option
+                            key={"dairy"}
+                            value={"dairy"}
+                            className='text-black'
+                        >
+                            Dairy
+                        </option>
+                        <option
+                            key={"bakery"}
+                            value={"bakery"}
+                            className='text-black'
+                        >
+                            Bakery
+                        </option>
+                        <option
+                            key={"meat"}
+                            value={"meat"}
+                            className='text-black'
+                        >
+                            Meat
+                        </option>
+                        <option
+                            key={"frozen foods"}
+                            value={"frozen foods"}
+                            className='text-black'
+                        >
+                            Frozen Foods
+                        </option>
+                        <option
+                            key={"canned goods"}
+                            value={"canned goods"}
+                            className='text-black'
+                        >
+                            Canned Goods
+                        </option>
+                        <option
+                            key={"dry goods"}
+                            value={"dry goods"}
+                            className='text-black'
+                        >
+                            Dry Goods
+                        </option>
+                        <option
+                            key={"beverages"}
+                            value={"beverages"}
+                            className='text-black'
+                        >
+                            Beverages
+                        </option>
+                        <option
+                            key={"snacks"}
+                            value={"snacks"}
+                            className='text-black'
+                        >
+                            Snacks
+                        </option>
+                        <option
+                            key={"household"}
+                            value={"household"}
+                            className='text-black'
+                        >
+                            Household
+                        </option>
+                        <option
+                            key={"other"}
+                            value={"other"}
+                            className='text-black'
+                        >
+                            Other
+                        </option>
                     </select>
                 </div>
 
