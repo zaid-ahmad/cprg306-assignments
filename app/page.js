@@ -42,6 +42,15 @@ export default function Home() {
                         Week 5
                     </Link>
                 </li>
+
+                <li>
+                    <Link
+                        href={"/week-6"}
+                        className='transition-all px-8 py-2 rounded hover:bg-zinc-800 focus:bg-zinc-700'
+                    >
+                        Week 6
+                    </Link>
+                </li>
             </ul>
         </main>
     );
