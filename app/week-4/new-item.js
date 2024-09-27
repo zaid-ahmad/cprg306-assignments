@@ -4,7 +4,7 @@ import { useState } from "react";
 const NewItem = () => {
     const [quantity, setQuantity] = useState(1);
     let buttonStyle =
-        "w-24 h-12 flex items-center justify-center bg-teal-500 text-white rounded font-bold text-3xl transition-all duration-300 ease-in-out hover:bg-teal-600 disabled:opacity-50 disabled:cursor-not-allowed";
+        "w-24 h-12 flex items-center justify-center bg-teal-500 text-white rounded font-bold text-3xl transition-all duration-100 ease-in-out hover:bg-teal-600 active:bg-teal-950 disabled:opacity-50 disabled:cursor-not-allowed";
 
     const increment = () => {
         if (quantity < 20) {
